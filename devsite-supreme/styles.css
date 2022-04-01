@@ -1,9 +1,12 @@
     html {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
         overflow-x: hidden;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
+
     /* Navbar styling*/
-    
+
     .navbar {
         background-color: #da1a32;
         color: white;
@@ -13,7 +16,7 @@
         height: 44;
         z-index: 8;
     }
-    
+
     .logo {
         height: 75%;
         width: 100%;
@@ -22,115 +25,127 @@
         margin-left: 20px;
         object-fit: contain;
     }
-    
+
     .nav-link {
         color: white;
         display: block;
         padding: 10px;
         width: 300px;
     }
-    
+
     .link:hover {
         text-decoration: underline;
     }
-    
+
     .nav-middle {
         width: 100%;
         display: flex;
         align-items: center;
     }
-    
+
     .link {
         text-decoration: none;
         color: white;
         font-weight: bolder;
     }
-    
+
     footer {
         background-color: #da1a32;
         color: white;
         z-index: 2;
     }
-    
+
     footer ul li b {
         text-decoration: none;
     }
-    
+
     .icons {
         width: 20px;
         height: 20px;
-        padding-left: 300px;
+        float: right;
     }
-    
+
     hr {
         color: transparent;
     }
-    
+
     .right {
         float: right;
         width: 100%;
         filter: grayscale();
     }
-    
+
     .product-section {
         background-color: white;
     }
-    
+
     .carousel {
         overflow: hidden;
         width: 100%;
-        height: 400px;
-        display: flex;
     }
-    
+
     .carousel-container {
-        width: 100%;
-        height: 800px;
-        display: flex;
+       
+        display:flex;
         position: relative;
-        -webkit-animation-name: slide_animation;
-        -webkit-animation-duration: 20s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate-reverse;
-        -webkit-animation-play-state: running;
+        object-fit: contain;
+        animation-name: slide_animation;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-play-state: running;
     }
-    
-    @-webkit-keyframes slide_animation {
+
+    .slide img {
+        object-fit: cover;
+    }
+
+    @keyframes slide_animation {
         0% {
             left: 0px;
         }
+
         10% {
             left: 0px;
         }
+
         20% {
             left: 1200px;
         }
+
         30% {
             left: 1200px;
         }
+
         40% {
             left: 2400px;
         }
+
         50% {
             left: -2400px;
         }
+
         60% {
             left: - 1200px;
         }
+
         70% {
             left: -1200px;
         }
+
         80% {
             left: 0px;
         }
+
         90% {
             left: 0px;
         }
+
         100% {
             left: 0px;
         }
     }
-    
+
     .slide {
         height: 500px;
         width: 100%;
@@ -138,8 +153,9 @@
         float: left;
         display: flex;
     }
+
     /*BANNER*/
-    
+
     .middle-banner {
         padding-top: 20px;
         color: #da1a32;
@@ -147,73 +163,77 @@
         height: 350px;
         width: 100%;
     }
-    
+
     .banner-left {
         padding-left: 10px;
         background-color: #da1a32;
         color: white;
     }
-    
+
     .banner-right {
         display: flex;
         padding-left: 10px;
         color: #da1a32;
     }
-    
+
     .items {
         border-color: #da1a32;
         border-style: solid;
         color: #da1a32;
     }
-    
+
     .items-img {
         width: 100%;
         height: 130px;
         object-fit: none;
     }
-    
+
     .ban-icons {
         display: flex;
     }
-    
+
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
         position: relative;
     }
-    
+
     .grid-item {
         width: 300px;
         height: 300px;
     }
-    
+
     .grid-item:hover {
         border: #da1a32;
         border-style: solid;
     }
-    
+
     .grid-img {
         position: relative;
         width: 150px;
         height: 200px;
         text-align: center;
+        padding-left: - 50px;
+        padding-top: 50px;
+        object-position: center;
+        align-items: center;
     }
-    
+
     h3 {
         font-weight: bold;
         font-size: 36px;
         text-align: center;
         color: rgb(100, 100, 100);
     }
-    
+
     .title {
         color: rgb(100, 100, 100);
     }
-    
+
     .price {
         color: rgb(100, 100, 100);
     }
-    
+
     .popup {
         padding: 10px;
         bottom: 0;
@@ -223,10 +243,14 @@
         width: 99%;
         background: #da1a32;
         height: auto;
-        position: fixed;
+        position: sticky;
+
         color: white;
     }
-    
+
     button {
         float: right;
+        background-color: #da1a32;
+        border: none;
+        color:white;
     }
